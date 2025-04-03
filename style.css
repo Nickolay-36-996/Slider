@@ -6,15 +6,25 @@
     padding: 20px 20px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+}
+
 .cards {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    max-width: 1170px;
+    transition: linear .3s;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
     gap: 46px;
     background-color: white;
     border-radius: 5px;
@@ -23,14 +33,19 @@
     width: 100%;
 }
 
+.product__photo {
+    max-height: 130px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .card__info {
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
 }
-
-.product__photo {}
 
 .title {
     font-family: SF Pro Text;
@@ -49,8 +64,8 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: white;
-    background-color: #449DA7;
+    color: #202223;
+    background-color: #E4E5E7;
     border-radius: 2px;
     padding: 2px 8px;
     align-self: flex-start;
@@ -116,4 +131,23 @@
     border: 1px solid #00A0AC;
     padding: 8px 72px;
     background-color: white;
+}
+
+.vector__left {
+    border-radius: 40px;
+    background: white;
+    padding: 14px 17px;
+}
+
+.vectors {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    align-self: end;
+}
+
+.vector__right {
+    border-radius: 40px;
+    background: white;
+    padding: 14px 17px;
 }
